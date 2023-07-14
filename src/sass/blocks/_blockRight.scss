@@ -1,0 +1,10 @@
+.blockRight {
+    background-color: $mainBg-color;
+    @include block-big;
+}
+
+.section-hide { display: none; }
+.section-active {
+    display: flex;
+    flex-direction: column; 
+}

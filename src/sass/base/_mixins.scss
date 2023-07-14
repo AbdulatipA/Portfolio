@@ -1,0 +1,20 @@
+@mixin block-big ($borderR: 50px, $padding: 60px 30px) {
+    border-radius: $borderR;
+    padding: $padding;
+}
+
+@mixin block-middle ($borderR: 30px, $padding: 30px) {
+    border-radius: $borderR;
+    padding: $padding;
+}
+
+@mixin block-small ($borderR: 15px, $padding: 15px) {
+    border-radius: $borderR;
+    padding: $padding;
+}
+
+@mixin hover {
+    color: $accent-color;
+    transition: all .1s;
+}
+

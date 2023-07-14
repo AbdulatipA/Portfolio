@@ -1,0 +1,56 @@
+@media screen and (width < 1600px) { 
+    .hobby_wrap {
+        gap: 10px;
+    }
+}
+
+@media screen and (width < 1201px) { 
+    .hobby_wrap {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .first {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        background: url('../img/1s.png') center center/cover no-repeat;
+    }
+    .second {
+        background: url('../img/2s.png') center bottom/cover no-repeat;
+    }
+    .three {
+        grid-column-start: auto;
+        grid-row-start: auto;
+        grid-row-end: auto;
+        background: url('../img/3s.png') center center/cover no-repeat;
+    }
+    .four {
+        grid-row-start: auto;
+        grid-row-end: auto;
+
+        background: url('../img/4s.png') center center/cover no-repeat;
+    }
+    .five {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+        grid-row-end: auto;
+
+        background: url('../img/5s.png') center center/cover no-repeat;
+    }
+    .six {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        background: url('../img/6s.png') center center/cover no-repeat;
+    }   
+}
+
+@media screen and (width < 993px) { 
+    .hobby_wrap {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, minmax(150px, 1fr));
+    }
+    .hobby_item {
+        @include block-middle (15px, 0px);
+    }
+}

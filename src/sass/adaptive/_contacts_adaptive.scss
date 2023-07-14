@@ -1,0 +1,7 @@
+@media screen and (width < 993px) {
+    .contacts_wrap {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+}

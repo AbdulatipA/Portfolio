@@ -1,0 +1,69 @@
+.hobby {
+    height: 100%;
+    &_wrap {
+        flex-grow: 1;
+        height: 100%;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+    }
+    &_item {
+        @include block-middle (30px, 0px);
+        background-color: $blockBg-color;
+        overflow: hidden;
+    }
+
+    }
+
+    .first {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        background: url('../img/1.png') center center/contain no-repeat;
+        @include block-middle (30px, 0px);
+        background-color: $blockBg-color;
+    }
+    .second {
+        background: url('../img/2.png') center bottom/contain no-repeat;
+        @include block-middle (30px, 0px);
+        background-color: $blockBg-color;
+    }
+    .three {
+        grid-column-start: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+
+        background: url('../img/3.png') center center/cover no-repeat;
+        @include block-middle (30px, 0px);
+        background-color: $blockBg-color;
+    }
+    .four {
+        grid-row-start: 2;
+        grid-row-end: 5;
+
+        background: url('../img/4.png') center center/cover no-repeat;
+        @include block-middle (30px, 0px);
+        background-color: $blockBg-color;
+    }
+    .five {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+
+        background: url('../img/5.png') center center/cover no-repeat;
+        @include block-middle (30px, 0px);
+        background-color: $blockBg-color;
+    }
+    .six {
+        grid-column-start: 2;
+        grid-column-end: 5;
+
+        background: url('../img/6.png') center center/cover no-repeat;
+        @include block-middle (30px, 0px);
+        background-color: $blockBg-color;
+    }   
+
+

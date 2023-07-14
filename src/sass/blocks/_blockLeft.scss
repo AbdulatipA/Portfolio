@@ -1,0 +1,88 @@
+.blockLeft {
+    background-color: $mainBg-color;
+    @include block-big;
+    &_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &_avatar {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.menu {
+    margin: 50px 0;
+}
+
+.menu_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu_item {
+    margin: 10px 0;
+    cursor: pointer;
+}
+.menu_link {
+    color: $text-color;
+}
+.menu_icon {
+    width: 20px;
+    height: 20px;
+    display: none;
+    margin: 0 auto;
+    pointer-events: none;
+}
+.menu_icon-active path {
+    fill: $accent-color;
+}
+
+.social_wrap  {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    &-item {
+        background-color: $blockBg-color;
+        @include block-small;
+        img {
+            max-width: 40px;
+            max-height: 40px;
+        }
+        span {
+            margin-left: 10px;
+        }
+    }
+}
+
+.connection_wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    margin-top: 50px;
+    gap: 20px;
+    .connection_item {
+        background-color: $blockBg-color;
+        @include block-middle;
+    }
+    .connection_down {
+        color: $text-color;
+        margin-right: 40px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .connection_tel {
+        color: $accent-color;
+        font-weight: 500;
+        display: inline-block;
+        margin-top: 10px;
+    }  
+}

@@ -1,0 +1,12 @@
+@media screen and (width < 1821px) { 
+    .blockRight {
+        @include block-middle ($padding: 30px 15px);
+    }
+}
+
+@media screen and (width < 993px) {
+    .blockRight {
+        @include block-big (0px, 30px 15px 30px 15px);
+        flex: 1 1 auto;
+    }
+}

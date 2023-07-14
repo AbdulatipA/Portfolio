@@ -1,0 +1,98 @@
+@media screen and (width < 1501px) {
+    // 1401px    
+    .aboutUs_wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title {
+            text-align: center;
+        }
+    }
+    .aboutUs_avatar {
+        margin-right: 0;
+    }
+    .aboutUs_info {
+        margin-top: 10px;
+    }
+    .aboutUs_descr {
+        margin-top: 15px;
+    }
+
+    .skills_wrap {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .direction {
+        position: static;
+        transform: translateX(0);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 15px;
+    }
+}
+
+/////////////////////////
+
+
+@media screen and (width < 993px) {
+    body {
+        background-color: $mainBg-color;
+        position: relative;
+    }
+    .main-wrap {
+        display: flex;
+        flex-direction: column
+    }
+
+    .aboutUs_wrap {
+        .aboutUs_avatar {
+            margin-right: 0;
+            max-width: 150px;
+            height: 150px;
+        }
+    }
+}
+
+/////////////////////
+
+@media screen and (width < 769px) {
+    .aboutUs_wrap {
+        .aboutUs_avatar {
+            margin-right: 0;
+            max-width: 100px;
+            height: 100px;
+        }
+    }
+
+    .descr {
+        font-size: 18px;
+    }
+
+    .aboutUs_descr {
+        text-align: start;
+    }
+    .aboutUs_avatar {
+        margin-right: 0;
+        max-width: 150px;
+        height: 150px;
+    }
+
+    .skills_wrap {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    .direction {
+        margin-top: 30px;
+        &_card {
+            border-radius: 30px;
+        }
+        &_card-descr {
+            margin-top: 8px;
+        }
+    }
+}
+
+//////////////////////////

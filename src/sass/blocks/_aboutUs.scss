@@ -1,0 +1,71 @@
+.aboutUs {
+    min-height: 100%;
+    &_avatar {
+        max-width: 250px;
+        height: 250px;
+        margin-right: 35px;
+    }
+    &_wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_descr {
+        margin-top: 20px;
+    }
+}
+
+.skills {
+    background-color: $blockBg-color;
+    @include block-middle;
+    margin-top: 40px;
+    &_title {
+        color: $text-color;
+    }
+    &_wrap {
+    margin-top: 20px; 
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: 1fr;
+    grid-auto-columns: auto;  
+    grid-auto-rows: auto;
+    gap: 25px;
+    }
+    &_img {
+        overflow: hidden;
+        border-radius: 10px;
+        filter: drop-shadow(0px 45px 18px rgba(0, 0, 0, 0.01)) drop-shadow(0px 25px 15px rgba(0, 0, 0, 0.03)) drop-shadow(0px 11px 11px rgba(0, 0, 0, 0.04)) drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.05)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.05));
+        img {
+            width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+    }
+    span {
+        text-align: center;
+        display: block;
+        margin-top: 15px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+}
+
+.direction {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-auto-rows: auto;
+    gap: 30px;
+    margin-top: 40px;
+    &_card {
+        background-color: $blockBg-color;
+        @include block-middle;
+        &-title {
+            color: $text-color;
+        }
+        &-descr {
+            color: $text-color;
+            margin-top: 20px;
+        }
+    }
+}

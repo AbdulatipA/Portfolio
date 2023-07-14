@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'TT Commons';
+    font-size: 20px;
+    font-weight: 400;
+    color: $text-color;
+    background-color: #D8E3E8;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, ul, li {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: $text-color;
+}
+
+
+.main-wrap {
+    max-width: 100vw;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 100%;
+    gap: 20px;
+    padding: 40px;
+}
+
+
+.avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+.menu_active {
+    color: $accent-color;
+    transition: all .3s;
+}
+
+
+
+

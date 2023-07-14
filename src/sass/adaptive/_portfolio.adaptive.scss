@@ -1,0 +1,16 @@
+@media screen and (width < 993px) { 
+    .portfolio {
+        .work-link:hover {
+            background-color: $blockBg-color;
+            color: $text-color;
+        }
+    }
+}
+
+@media screen and (width < 576px) { 
+    .portfolio {
+        .work_wrap {
+            grid-template-columns: repeat(1, minmax(300px, 1fr));
+        }
+    }
+}
